@@ -2,108 +2,195 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>J.A.R.V.I.S. Mobile Edition</title>
 
-    <link rel="stylesheet" href="style.css">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="J.A.R.V.I.S Mobile Edition - AI Assistant Interface"
+    >
+
+    <title>J.A.R.V.I.S Mobile Edition</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <!-- Orbitron -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Main CSS -->
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
 </head>
 
 <body>
 
-    <div class="app">
+<main class="app">
 
-        <!-- Header -->
-        <header>
-            <div class="brand">
-                <div class="logo">J</div>
-                <div>
-                    <h1>J.A.R.V.I.S.</h1>
-                    <p>MOBILE EDITION</p>
-                </div>
+    <!-- HEADER -->
+    <header>
+
+        <div class="brand">
+
+            <div class="logo">
+                J
             </div>
 
-            <div class="status">
-                <span></span> ONLINE
-            </div>
-        </header>
+            <div>
+                <h1>J.A.R.V.I.S</h1>
 
-        <!-- Arc Reactor -->
-        <section class="reactor-section">
-            <div class="reactor">
-                <div class="ring ring-1"></div>
-                <div class="ring ring-2"></div>
-                <div class="ring ring-3"></div>
-                <div class="core">
-                    <span>J</span>
-                </div>
+                <p>MOBILE EDITION</p>
             </div>
 
-            <h2>SYSTEMS ONLINE</h2>
-            <p>All J.A.R.V.I.S. systems are operational.</p>
-        </section>
+        </div>
 
-        <!-- System Cards -->
-        <section class="systems">
+        <div class="status">
+            <span></span>
+            ONLINE
+        </div>
 
-            <div class="system-card">
-                <span>⚡</span>
-                <div>
-                    <strong>CORE SYSTEM</strong>
-                    <small>Operational</small>
-                </div>
+    </header>
+
+
+    <!-- REACTOR -->
+    <section class="reactor-section">
+
+        <div class="reactor">
+
+            <div class="ring ring-1"></div>
+            <div class="ring ring-2"></div>
+            <div class="ring ring-3"></div>
+
+            <div class="core">
+                <span>J</span>
             </div>
 
-            <div class="system-card">
-                <span>🧠</span>
-                <div>
-                    <strong>AI ENGINE</strong>
-                    <small>Ready</small>
-                </div>
+        </div>
+
+        <h2>J.A.R.V.I.S</h2>
+
+        <p>
+            JUST A RATHER VERY INTELLIGENT SYSTEM
+        </p>
+
+    </section>
+
+
+    <!-- SYSTEM STATUS -->
+    <section class="systems">
+
+        <div class="system-card">
+
+            <span>⚡</span>
+
+            <div>
+                <strong>CORE</strong>
+                <small>ONLINE</small>
             </div>
 
-            <div class="system-card">
-                <span>🛡️</span>
-                <div>
-                    <strong>SECURITY</strong>
-                    <small>Protected</small>
-                </div>
+        </div>
+
+
+        <div class="system-card">
+
+            <span>🧠</span>
+
+            <div>
+                <strong>AI ENGINE</strong>
+                <small>READY</small>
             </div>
 
-        </section>
+        </div>
 
-        <!-- Chat -->
-        <section class="chat-section">
 
-            <div class="section-title">
-                <span>J.A.R.V.I.S. CONSOLE</span>
-                <span class="live">● LIVE</span>
+        <div class="system-card">
+
+            <span>🌐</span>
+
+            <div>
+                <strong>NETWORK</strong>
+                <small>CONNECTED</small>
             </div>
 
-            <div id="chat">
-                <div class="msg ai">
-                    J.A.R.V.I.S: Systems online. How may I assist you, Boss?
-                </div>
+        </div>
+
+    </section>
+
+
+    <!-- CHAT -->
+    <section class="chat-section">
+
+        <div class="section-title">
+
+            <span>
+                J.A.R.V.I.S TERMINAL
+            </span>
+
+            <span class="live">
+                ● LIVE
+            </span>
+
+        </div>
+
+
+        <!-- CHAT MESSAGES -->
+        <div id="chat">
+
+            <div class="msg ai">
+                J.A.R.V.I.S: Systems online. How may I assist you, Boss?
             </div>
 
-            <div class="input-area">
-                <input
-                    id="msg"
-                    type="text"
-                    placeholder="Enter command..."
-                    autocomplete="off"
-                >
+        </div>
 
-                <button id="send">➤</button>
-            </div>
 
-        </section>
+        <!-- INPUT -->
+        <div class="input-area">
 
-        <footer>
-            J.A.R.V.I.S. MOBILE EDITION
-        </footer>
+            <input
+                type="text"
+                id="msg"
+                placeholder="Ask J.A.R.V.I.S..."
+                autocomplete="off"
+                aria-label="Message"
+            >
 
-    </div>
+            <button
+                id="send"
+                type="button"
+                aria-label="Send message"
+            >
+                ➤
+            </button>
 
-    <script src="script.js"></script>
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        J.A.R.V.I.S MOBILE EDITION • SYSTEM READY
+    </footer>
+
+</main>
+
+
+<!-- JavaScript -->
+<script src="script.js"></script>
+
 </body>
-</html>
+</html>                    
